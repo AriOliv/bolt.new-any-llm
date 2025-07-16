@@ -32,6 +32,7 @@ services:
   bolt-ai-dev:
     image: bolt-ai:development
     build:
+      context: .
       target: bolt-ai-development
     environment:
       - NODE_ENV=development
